@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+/* css 初始化 */
+/* 1.清除浏览器默认样式 */
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+select,
+img,
+table,
+div {
+  margin: 0;
+  padding: 0;
+}
+/* 2.针对性处理 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: none;
+  display: inline-block;
+  /*img底部空白*/
+}
+input,
+area {
+  outline: none;
+}
+/* 谷歌浏览器表单元素外框 */
+/* 3.设置全局样式 */
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", Arial;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+/*版心*/
+/*闭合浮动*/
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*响应式图片*/
+img {
+  /* max-width: 100%; */
+  height: auto;
+}
