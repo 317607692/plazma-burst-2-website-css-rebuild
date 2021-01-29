@@ -168,21 +168,58 @@ a {
 .pb-container .content .content-wrapper p:first-child {
   margin-top: 0px;
 }
-.pb-container .content .content-wrapper p a {
-  font-weight: bold;
-  display: inline;
-  color: #FFCC00;
-  transition: color 0.4s;
-  transition-timing-function: cubic-bezier(0, 4, 1, 1);
-}
-.pb-container .content .content-wrapper p a:hover {
-  color: #FFE375;
-}
 .pb-container .end {
   width: 828px;
   background-image: url("../image/block-end.png");
   background-repeat: no-repeat;
   height: 5px;
+}
+.pb-top-map {
+  display: block;
+  margin: 0px auto 30px auto;
+  background-color: #000;
+  border-radius: 10px 10px 0px 0px;
+  min-height: 10px;
+}
+.pb-top-map .head {
+  padding: 0px 16px;
+  background-color: #2b313f;
+  border-radius: 10px 10px 0px 0px;
+  height: 40px;
+  box-shadow: inset 0px 0px 15px rgba(29, 35, 50, 0.6);
+}
+.pb-top-map .head span {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 40px;
+}
+.pb-top-map .body .img {
+  float: left;
+  width: 400px;
+}
+.pb-top-map .body .img img {
+  width: 100%;
+  height: auto;
+}
+.pb-top-map .body .info {
+  padding: 20px;
+  margin-left: 400px;
+  min-height: 100px;
+  background-color: #3c4657;
+}
+.pb-top-map .body .info > div {
+  margin-top: 16px;
+}
+.pb-top-map .body .info > div:first-child {
+  margin-top: 0px;
+}
+.pb-top-map .body .info p {
+  text-align: justify;
+  color: #969fb3;
+}
+.pb-top-map .body .info p .link {
+  color: #fff;
+  font-weight: bold;
 }
 .pb-avatar {
   display: block;
@@ -349,6 +386,49 @@ a {
 .pb-top-players .body td span.number-2 {
   margin-left: -3px;
   color: rgba(255, 255, 85, 0.4);
+}
+.pb-btn-get-map-id {
+  padding: 9px 15px 9px 9px;
+  display: inline-block;
+  color: #969fb3;
+  background-color: #49556c;
+  border-radius: 7px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 10px;
+}
+.pb-btn-get-map-id i {
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  background-image: url("../image/id.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pb-form-profile td {
+  font-size: 10px;
+  color: #fff;
+}
+.pb-form-profile td:first-child {
+  padding-right: 10px;
+  text-align: right;
+}
+.pb-input {
+  color: #ffc258;
+  background-color: #06090A;
+  border: 1px solid #0f121c;
+  width: 400px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 6px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.pb-input:focus {
+  border: 1px solid #7c7251;
+  outline: none;
+  box-sizing: border-box;
 }
 .bili-player {
   width: 800px;

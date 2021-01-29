@@ -217,17 +217,17 @@ a {
                         margin-top: 0px;
                     }
 
-                    a {
-                        font-weight: bold;
-                        display: inline;
-                        color: @color-yellow;
-                        transition: color 0.4s;
-                        transition-timing-function: cubic-bezier(0, 4, 1, 1);
+                    // a {
+                    //     font-weight: bold;
+                    //     display: inline;
+                    //     color: @color-yellow;
+                    //     transition: color 0.4s;
+                    //     transition-timing-function: cubic-bezier(0, 4, 1, 1);
 
-                        &:hover {
-                            color: #FFE375;
-                        }
-                    }
+                    //     &:hover {
+                    //         color: #FFE375;
+                    //     }
+                    // }
                 }
 
 
@@ -240,6 +240,68 @@ a {
             background-image: url("../image/block-end.png");
             background-repeat: no-repeat;
             height: 5px;
+        }
+    }
+
+    &-top-map {
+        display: block;
+        margin: 0px auto 30px auto;
+        background-color: #000;
+        border-radius: 10px 10px 0px 0px;
+        min-height: 10px;
+
+        .head {
+            padding: 0px 16px;
+            background-color: #2b313f;
+            border-radius: 10px 10px 0px 0px;
+            @height: 40px;
+            height: @height;
+            box-shadow: inset 0px 0px 15px rgb(29 35 50 / 60%);
+
+            span {
+                color: #FFFFFF;
+                font-size: 14px;
+                line-height: @height;
+            }
+        }
+
+        .body {
+            @img-width: 400px;
+
+            .img {
+                float: left;
+                width: @img-width;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .info {
+                padding: 20px;
+                margin-left: @img-width;
+                min-height: 100px;
+                background-color: #3c4657;
+
+                &>div {
+                    margin-top: 16px;
+
+                    &:first-child {
+                        margin-top: 0px;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                    color: #969fb3;
+
+                    .link {
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 
@@ -288,6 +350,14 @@ a {
                 color: #666;
             }
         }
+
+        // &.white{
+        //     transition-timing-function: unset;
+        //     color: #fff;
+        //     &:hover{
+        //         color: #fff;
+        //     }
+        // }
 
         &>.number {
             color: #666;
@@ -461,6 +531,59 @@ a {
             //     vertical-align: middle;
             //     text-align: center;
             // }
+        }
+    }
+
+    &-btn-get-map-id {
+        padding: 9px 15px 9px 9px;
+        display: inline-block;
+        color: #969fb3;
+        background-color: #49556c;
+        border-radius: 7px;
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 10px;
+
+        i {
+            display: inline-block;
+            width: 18px;
+            height: 15px;
+            background-image: url("../image/id.png");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-form-profile {
+        td {
+            font-size: 10px;
+            color: #fff;
+
+            &:first-child {
+                padding-right: 10px;
+                text-align: right;
+            }
+
+
+        }
+    }
+
+    &-input {
+        color: #ffc258;
+        background-color: #06090A;
+        border: 1px solid #0f121c;
+        width: 400px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 6px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        vertical-align: middle;
+
+        &:focus {
+            border: 1px solid #7c7251;
+            outline: none;
+            box-sizing: border-box;
         }
     }
 }
