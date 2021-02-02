@@ -3,6 +3,15 @@ span,
 a {
   text-align: justify;
 }
+div,
+a,
+span {
+  font-size: 10px;
+  line-height: 140%;
+}
+.align-center {
+  text-align: center;
+}
 .pb-body {
   min-width: 1200px;
   background-image: url("../image/bg.jpg");
@@ -12,12 +21,6 @@ a {
   background-size: cover;
   font-family: "Verdana, Arial, Helvetica, sans-serif";
   color: #fff;
-}
-.pb-body div,
-.pb-body a,
-.pb-body span {
-  font-size: 10px;
-  line-height: 140%;
 }
 .pb-header {
   margin: 0 auto;
@@ -406,7 +409,7 @@ a {
   background-repeat: no-repeat;
 }
 .pb-form-row {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 .pb-form-row .pb-form-label {
   width: 200px;
@@ -420,13 +423,25 @@ a {
 }
 .pb-form-row .pb-form-content {
   margin-left: 210px;
+  margin-right: 100px;
+}
+.pb-form-row .pb-form-content .show-text {
+  height: 30px;
+  line-height: 30px;
+}
+.pb-form-row .pb-form-content .show-text-green {
+  color: #66FF66;
+}
+.pb-form-row .pb-form-content .show-text-red {
+  color: #FF6666;
+}
+.pb-form-row .pb-form-content .show-text-yellow {
+  color: #FFFF55;
 }
 .pb-form-row .pb-form-content .hint {
   display: block;
   width: 100%;
-  height: 18px;
   line-height: 18px;
-  overflow: hidden;
 }
 .pb-form-row .pb-form-content .hint-blue {
   display: block;
@@ -452,6 +467,55 @@ a {
   border: 1px solid #7c7251;
   outline: none;
   box-sizing: border-box;
+}
+.pb-select {
+  color: #ffc258;
+  background-color: #06090A;
+  border: 1px solid #0f121c;
+  border-radius: 4px;
+  width: 400px;
+  height: 30px;
+}
+.pb-button {
+  cursor: pointer;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  border: 1px dashed #fff;
+  background-color: black;
+  padding: 0px 7px;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.pb-button:first-child {
+  margin-left: 0px;
+}
+.pb-button-default {
+  color: #bcbec3;
+  background-color: #2c3444;
+  border: 1px solid #424f68;
+  border-radius: 3px;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+.pb-button-default:hover {
+  background-color: #37435c;
+  border: 1px solid #596e95;
+}
+.pb-button-green {
+  border: 1px dashed green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+.pb-button-green:hover {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+.pb-button-blue {
+  border: 1px dashed #95c0ff;
+  background-color: rgba(129, 216, 255, 0.19);
+}
+.pb-button-blue:hover {
+  background-color: rgba(129, 216, 255, 0.3);
 }
 .bili-player {
   width: 800px;
