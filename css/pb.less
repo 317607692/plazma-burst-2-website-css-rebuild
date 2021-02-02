@@ -554,16 +554,77 @@ a {
     }
 
     &-form-profile {
-        td {
-            font-size: 10px;
-            color: #fff;
+        // table {
+        //     // border-collapse: separate;
+        //     // border-spacing: 34px;
+        // }
 
-            &:first-child {
-                padding-right: 10px;
-                text-align: right;
+        // tr {
+        //     // padding-bottom: 18px;
+        //     margin-bottom: 16px + 18px;
+        // }
+
+        // td {
+        //     position: relative;
+        //     font-size: 10px;
+        //     color: #fff;
+
+        //     &:first-child {
+        //         padding-right: 10px;
+        //         text-align: right;
+        //     }
+
+        //     .hint {
+        //         position: absolute;
+        //         bottom: -18px;
+        //         display: block;
+        //         width: 100%;
+        //         @height: 18px;
+        //         height: @height;
+        //         line-height: @height;
+        //         overflow: hidden;
+        //     }
+        // }
+
+
+    }
+
+    &-form-row {
+        margin-bottom: 18px;
+
+        .@{prefix}-form-label {
+            width: 200px;
+            float: left;
+            margin-right: 10px;
+            text-align: right;
+
+            span {
+                @height: 30px;
+                height: @height;
+                line-height: @height;
             }
+        }
 
+        .@{prefix}-form-content {
+            margin-left: 210px;
 
+            .hint {
+                display: block;
+                width: 100%;
+                @height: 18px;
+                height: @height;
+                line-height: @height;
+                overflow: hidden;
+            }
+            .hint-blue{
+                display: block;
+                width: 100%;
+                @height: 18px;
+                height: @height;
+                line-height: @height;
+                overflow: hidden;
+                color: #799DC2;
+            }
         }
     }
 
