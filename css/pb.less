@@ -1,33 +1,24 @@
 @prefix: ~"pb";
 @min-width: 1200px;
 @body-width: 828px;
-@color-yellow: #FFCC00;
-
-p,
-span,
-a {
-    text-align: justify;
-}
-
-// fix
-div,
-a,
-span {
-    font-size: 10px;
-    line-height: 140%;
-}
+@color-yellow: #ffcc00;
 
 .align-center {
     text-align: center;
 }
 
 .@{prefix} {
-
     // big
     &-body {
+        // fix
+        div,
+        a,
+        span {
+            text-align: justify;
+            font-size: 10px;
+            // line-height: 140%;
+        }
         min-width: @min-width;
-
-
 
         background-image: url("../image/bg.jpg");
         background-position: center;
@@ -63,11 +54,11 @@ span {
                 min-height: 50px;
                 margin-right: 10px;
 
-                &>div {
+                & > div {
                     text-align: right;
                 }
 
-                &>.actions {
+                & > .actions {
                     ul {
                         display: table;
                         clear: both;
@@ -78,9 +69,7 @@ span {
                         }
                     }
                 }
-
             }
-
         }
 
         .@{prefix}-header-navbar {
@@ -98,14 +87,14 @@ span {
 
                 display: block;
                 width: auto;
-                height: (@height)-(2px);
+                height: (@height)- (2px);
                 color: #fff;
                 border-width: 1px;
                 border-style: solid;
                 border-color: rgba(50, 100, 200, 0);
                 transition: background-color 0.4s, border-color 0.4s;
                 font-size: 10px;
-                line-height: (@height)-(2px);
+                line-height: (@height)- (2px);
                 font-weight: normal;
 
                 &:hover {
@@ -235,10 +224,7 @@ span {
                     //     }
                     // }
                 }
-
-
             }
-
         }
 
         .end {
@@ -265,7 +251,7 @@ span {
             box-shadow: inset 0px 0px 15px rgb(29 35 50 / 60%);
 
             span {
-                color: #FFFFFF;
+                color: #ffffff;
                 font-size: 14px;
                 line-height: @height;
             }
@@ -290,7 +276,7 @@ span {
                 min-height: 100px;
                 background-color: #3c4657;
 
-                &>div {
+                & > div {
                     margin-top: 16px;
 
                     &:first-child {
@@ -320,7 +306,7 @@ span {
         overflow: hidden;
         background-color: #000;
 
-        &>img {
+        & > img {
             position: absolute;
             z-index: 0;
             // origin: 220px 260px
@@ -344,7 +330,7 @@ span {
         transition-timing-function: cubic-bezier(0, 4, 1, 1);
 
         &:hover {
-            color: #FFE375;
+            color: #ffe375;
         }
 
         &.dark {
@@ -364,20 +350,20 @@ span {
         //     }
         // }
 
-        &>.number {
+        & > .number {
             color: #666;
         }
 
-        &>.number-white>span {
+        & > .number-white > span {
             color: #fff;
         }
 
-        &>.number-green>span {
+        & > .number-green > span {
             color: #666;
         }
 
-        &>.number-grey>span {
-            color: #5F5;
+        & > .number-grey > span {
+            color: #5f5;
         }
     }
 
@@ -448,7 +434,7 @@ span {
 
         .head {
             height: 45px;
-            background-color: #333E55;
+            background-color: #333e55;
 
             .top-title {
                 width: auto;
@@ -505,7 +491,6 @@ span {
 
                 font-size: 10px;
 
-
                 a.pb-link {
                     font-size: 10px;
                 }
@@ -521,7 +506,7 @@ span {
                     // -webkit-line-clamp: 1;
                     // -webkit-box-orient: vertical;
                     &.number-1 {
-                        color: #FFFF55;
+                        color: #ffff55;
                     }
 
                     &.number-2 {
@@ -591,8 +576,6 @@ span {
         //         overflow: hidden;
         //     }
         // }
-
-
     }
 
     &-form-row {
@@ -623,18 +606,17 @@ span {
                 line-height: @height;
 
                 &-green {
-                    color: #66FF66;
+                    color: #66ff66;
                 }
 
                 &-red {
-                    color: #FF6666;
+                    color: #ff6666;
                 }
 
                 &-yellow {
-                    color: #FFFF55;
+                    color: #ffff55;
                 }
             }
-
 
             .hint {
                 display: block;
@@ -651,14 +633,14 @@ span {
                 height: @height;
                 line-height: @height;
                 overflow: hidden;
-                color: #799DC2;
+                color: #799dc2;
             }
         }
     }
 
     &-input {
         color: #ffc258;
-        background-color: #06090A;
+        background-color: #06090a;
         border: 1px solid #0f121c;
         width: 400px;
         font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -677,7 +659,7 @@ span {
 
     &-select {
         color: #ffc258;
-        background-color: #06090A;
+        background-color: #06090a;
         border: 1px solid #0f121c;
         border-radius: 4px;
         width: 400px;
@@ -734,8 +716,6 @@ span {
             }
         }
     }
-
-
 }
 
 // others
